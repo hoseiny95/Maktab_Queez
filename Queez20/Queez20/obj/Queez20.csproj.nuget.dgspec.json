@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\Queez20.csproj": {}
+    "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\Queez20.csproj": {}
   },
   "projects": {
-    "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\Queez20.csproj": {
+    "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\Queez20.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\Queez20.csproj",
+        "projectUniqueName": "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\Queez20.csproj",
         "projectName": "Queez20",
-        "projectPath": "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\Queez20.csproj",
+        "projectPath": "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\Queez20.csproj",
         "packagesPath": "C:\\Users\\ASUS\\.nuget\\packages\\",
-        "outputPath": "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\obj\\",
+        "outputPath": "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\ASUS\\AppData\\Roaming\\NuGet\\NuGet.Config",

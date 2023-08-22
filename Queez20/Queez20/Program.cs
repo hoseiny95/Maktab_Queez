@@ -1,7 +1,16 @@
+//using Microsoft.EntityFrameworkCore;
+
+using Microsoft.EntityFrameworkCore;
+using Queez20.Data;
+
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+builder.Services.AddDbContext<ApplicationContext>(options =>
+
+    options.UseSqlServer(builder.Configuration.GetConnectionString("AppContext")));
+
 
 var app = builder.Build();
 

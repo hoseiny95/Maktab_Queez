@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "AkCrnDs/2PYIw7yTxteznM4Amaz0C6Wl8mq2IDprXoSh+KVzCKbK8TGR423g0xRmI7ktu/cbw8NbzxzA1nKyKg==",
+  "dgSpecHash": "iOr0TgByHBJdBWqymmabuv9jfZtbIS3NKh+Q6EhOPFn2qfMCiqbSTLUVYKqKPkriOK5li1prSGK4Wyxdp8t3/w==",
   "success": true,
-  "projectFilePath": "E:\\c project\\MaktabQueez\\Queez20\\Queez20\\Queez20.csproj",
+  "projectFilePath": "E:\\New folder (3)\\Maktab_Queez\\Queez20\\Queez20\\Queez20.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\ASUS\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",
