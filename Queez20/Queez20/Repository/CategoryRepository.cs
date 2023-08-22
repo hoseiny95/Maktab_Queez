@@ -45,7 +45,9 @@ namespace Queez20.Repository
 
         public async Task Update(Category category)
         {
-            _context.Entry(category).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
+            var categoruOld = await _context.Categories.FindAsync(category.Id);
+            categoruOld.Name    = category.Name;
+
             await _context.SaveChangesAsync();
         }
     }

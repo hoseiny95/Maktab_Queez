@@ -49,7 +49,13 @@ namespace Queez20.Repository
 
         public async Task Update(Product product)
         {
-            _context.Entry(product).State = (Microsoft.EntityFrameworkCore.EntityState)EntityState.Modified;
+            var productold = await _context.Products.FindAsync(product.Id);
+            productold.Name = product.Name;
+            productold.ManufactureDate = product.ManufactureDate;
+            productold.Price = product.Price;
+            productold.CategoryId = product.CategoryId;
+
+
             await _context.SaveChangesAsync();
         }
     }
