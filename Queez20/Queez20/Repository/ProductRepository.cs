@@ -33,15 +33,16 @@ namespace Queez20.Repository
 
         public async Task<IEnumerable<Product>> GetAllAsync()
         {
-            var query = "select * from Product ";
-            using var connection = new SqlConnection(_config.GetConnectionString("constring"));
-            var products = await connection.QueryAsync<Product>("select * from Product");
+            using var connection = new SqlConnection(_config.GetConnectionString("AppContext"));
+            var products = await connection.QueryAsync<Product>("select * from Products");
             return products;
         }
     
         public async Task<Product> GetByIdAsync(int id)
         {
-            return await _context.Products.FindAsync(id);
+            var product = await _context.Products.FindAsync(id);
+            
+            return product;
         }
 
         public async Task Update(Product product)
