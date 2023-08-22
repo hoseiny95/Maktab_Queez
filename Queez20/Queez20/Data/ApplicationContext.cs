@@ -1,4 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Queez20.Models;
+using System.Diagnostics;
 
 namespace Queez20.Data;
 
@@ -10,11 +12,11 @@ public class ApplicationContext : DbContext
 }
 protected override void OnModelCreating(ModelBuilder modelBuilder)
 {
-    //modelBuilder.Entity<Student>()
-    //.HasOne(a => a.Grade)
-    //.WithOne(a => a.Student)
-    //.HasForeignKey<Grade>(c => c.GradeID);
+        modelBuilder.Entity<Product>()
+            .HasOne<Category>(s => s.category)
+            .WithMany(g => g.Products)
+            .HasForeignKey(s => s.CategoryId);
 
-}
+    }
 
 }
