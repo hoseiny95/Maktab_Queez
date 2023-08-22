@@ -73,3 +73,12 @@ E:\New folder (3)\Maktab_Queez\Queez20\Queez20\obj\Debug\net7.0\refint\Queez20.d
 E:\New folder (3)\Maktab_Queez\Queez20\Queez20\obj\Debug\net7.0\Queez20.pdb
 E:\New folder (3)\Maktab_Queez\Queez20\Queez20\obj\Debug\net7.0\Queez20.genruntimeconfig.cache
 E:\New folder (3)\Maktab_Queez\Queez20\Queez20\obj\Debug\net7.0\ref\Queez20.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\Dapper.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\EntityFramework.SqlServer.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\EntityFramework.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\System.Data.SqlClient.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\runtimes\win-arm64\native\sni.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\runtimes\win-x64\native\sni.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\runtimes\win-x86\native\sni.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+E:\New folder (3)\Maktab_Queez\Queez20\Queez20\bin\Debug\net7.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
