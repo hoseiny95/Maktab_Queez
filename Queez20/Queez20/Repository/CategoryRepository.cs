@@ -32,9 +32,9 @@ namespace Queez20.Repository
 
         public async Task<IEnumerable<Category>> GetAllAsync()
         {
-            var query = "select * from Category ";
-            using var connection = new SqlConnection(_config.GetConnectionString("constring"));
-            var category = await connection.QueryAsync<Category>("select * from Product");
+           
+            using var connection = new SqlConnection(_config.GetConnectionString("AppContext"));
+            var category = await connection.QueryAsync<Category>("select * from categories");
             return category;
         }
 

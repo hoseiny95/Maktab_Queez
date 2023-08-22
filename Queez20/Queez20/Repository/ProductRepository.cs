@@ -19,6 +19,8 @@ namespace Queez20.Repository
         }
         public async Task Create(Product product)
         {
+            product.ManufactureDate = product.ManufactureDate.Substring(0, 4) + "/" + product.ManufactureDate.Substring(4, 2) +
+                "/" + product.ManufactureDate.Substring(6, 2);
             _context.Products.Add(product);
          
             await _context.SaveChangesAsync();
