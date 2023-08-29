@@ -17,13 +17,13 @@ namespace Queez20.Repository
             _context = context;
             _config = config;
         }
-        public async Task Create(Product product)
+        public async Task Create(Product product,CancellationToken cancellationToken)
         {
             product.ManufactureDate = product.ManufactureDate.Substring(0, 4) + "/" + product.ManufactureDate.Substring(4, 2) +
                 "/" + product.ManufactureDate.Substring(6, 2);
             _context.Products.Add(product);
          
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync(cancellationToken);
         }
 
         public async Task Delete(int id)

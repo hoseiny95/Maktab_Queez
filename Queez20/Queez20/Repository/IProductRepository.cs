@@ -7,7 +7,7 @@ namespace Queez20.Repository
     {
         Task<IEnumerable<Product>> GetAllAsync();
         Task<Product> GetByIdAsync(int id);
-        Task Create(Product product);
+        Task Create(Product product, CancellationToken cancellationToken);
         Task Update(Product product);
         Task Delete(int id);
     }

@@ -1,16 +1,23 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Mvc;
+using Microsoft.Identity.Client;
 using Queez20.Models;
 using Queez20.Repository;
 
 namespace Queez20.Controllers;
 
+[Authorize]
 public class ProductController : Controller
 {
     private readonly IProductRepository _iproductRepository;
+    private readonly UserManager<IdentityUser> _userManager;
 
-    public ProductController(IProductRepository iproductRepository)
+    public ProductController(IProductRepository iproductRepository,
+        UserManager<IdentityUser> userManager)
     {
         _iproductRepository = iproductRepository;
+        _userManager = userManager;
     }
 
     public async Task<IActionResult> Index()
@@ -31,10 +38,16 @@ public class ProductController : Controller
     [ValidateAntiForgeryToken]
     public async Task<IActionResult> Create(Product product)
     {
+        //var currentUser = await _userManager.GetUserAsync(User);
+        //product.UserId = currentUser.Id;
+
+        var claims = User.Claims.ToList();
+
+        product.CategoryId = 1;
+
         if (ModelState.IsValid)
         {
-
-            await _iproductRepository.Create(product);
+            await _iproductRepository.Create(product,default);
             return RedirectToAction(nameof(Index));
         }
         return View(product);

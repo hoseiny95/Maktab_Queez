@@ -1,10 +1,12 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Queez20.Models;
 using System.Diagnostics;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace Queez20.Data;
 
-public class ApplicationContext : DbContext
+public class ApplicationContext : IdentityDbContext<IdentityUser>
 {
     public ApplicationContext(DbContextOptions<ApplicationContext> options)
         : base(options)
@@ -17,7 +19,7 @@ public class ApplicationContext : DbContext
             .WithMany(g => g.Products)
             .HasForeignKey(s => s.CategoryId);
 
-
+        base.OnModelCreating(modelBuilder);
 
     }
     public DbSet<Product> Products { get; set; }
